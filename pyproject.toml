@@ -3,7 +3,7 @@ requires = ["maturin>=1.0,<2.0"]
 build-backend = "maturin"
 
 [project]
-name = "pdf-lib-py-rs"
+name = "pdf-lib-rs-py"
 requires-python = ">=3.9"
 classifiers = [
     "Programming Language :: Rust",
