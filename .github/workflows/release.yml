@@ -15,11 +15,6 @@ jobs:
         with:
           submodules: true
 
-      - uses: actions/checkout@v4
-        with:
-          repository: asg017/pdf-lib-rs
-          path: ../pdf-lib-rs
-
       - name: Build sdist
         uses: PyO3/maturin-action@v1
         with:
@@ -50,11 +45,6 @@ jobs:
       - uses: actions/checkout@v4
         with:
           submodules: true
-
-      - uses: actions/checkout@v4
-        with:
-          repository: asg017/pdf-lib-rs
-          path: ../pdf-lib-rs
 
       - name: Build wheels
         uses: PyO3/maturin-action@v1

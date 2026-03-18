@@ -9,6 +9,6 @@ crate-type = ["cdylib"]
 
 [dependencies]
 pyo3 = { version = "0.24", features = ["extension-module"] }
-pdf-lib-rs = { path = "../pdf-lib-rs" }
+pdf-lib-rs = { git = "https://github.com/asg017/pdf-lib-rs" }
 flate2 = "1"
 png = "0.17"

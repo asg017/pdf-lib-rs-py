@@ -15,10 +15,6 @@ jobs:
       - uses: actions/checkout@v4
         with:
           submodules: true
-      - uses: actions/checkout@v4
-        with:
-          repository: asg017/pdf-lib-rs
-          path: ../pdf-lib-rs
       - uses: dtolnay/rust-toolchain@stable
       - uses: astral-sh/setup-uv@v4
       - run: uv run --python ${{ matrix.python-version }} pytest tests/ -v
