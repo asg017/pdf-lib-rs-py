@@ -1,0 +1,14 @@
+[package]
+name = "pdf-lib-rs-py"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "pdf_lib"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.24", features = ["extension-module"] }
+pdf-lib-rs = { path = "../pdf-lib-rs" }
+flate2 = "1"
+png = "0.17"
