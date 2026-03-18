@@ -61,7 +61,7 @@ wheels = [
 ]
 
 [[package]]
-name = "pdf-lib"
+name = "pdf-lib-py-rs"
 source = { editable = "." }
 
 [package.dev-dependencies]
